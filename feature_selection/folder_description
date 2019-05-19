@@ -1,0 +1,14 @@
+This folder has 3 subfolders for the three types of feature selection strategies which are embedded, filter and wrapper.
+All these feature selection strategies are applied on 34 features extracted by pyAudioAnalysis only for train data of BUZZ2 dataset.
+
+The embedded folder contains the RF_feature_importance.py script which determines the importance of features using random forest feature importance plot.
+
+The filter folder contains 1 sub folder (saved_models) and 3 python scripts (ReliefF.py, univariate_feature_selection.py, univariate_validation.py):
+The saved_models folder contains all the trained models saved through python pickle library.
+The script ReliefF.py determines feature importance using ReliefF feature importance plot.
+The univariate_feature_selection.py and univariate_validation.py scripts determines important features using various statistical tests (chi2, f_classif, mutual_info_classif) and uses those features to train-test and validate on BUZZ2 dataset respectively.
+
+The wrapper folder contains 1 sub folder (saved_models) and 4 python scripts (RFE.py, RFE_validate.py, SFS.py, SFS_validate.py):
+The saved_models folder contains all the trained models saved through python pickle library.
+The scripts RFE.py and RFE_validate.py selects the best subset of features using recursive feature elimination and then uses those features to train-test and validate on BUZZ2 dataset respectively.
+The scripts SFS.py and SFS_validate.py selects the best subset of features using sequential forward selection and then uses those features to train-test and validate on BUZZ2 dataset respectively.

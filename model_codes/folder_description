@@ -1,0 +1,9 @@
+This folder contains 6 python scripts (KNNClassifier.py, LogisticRegressionClassifier.py, model_validate.py, OneVSRest_using_SVM.py, RandomForest.py, SVMclassifier.py) and 1 subfolder (saved_models).
+
+The saved_models folder contains all the trained models saved through python pickle library.
+
+The KNNClassifier.py, LogisticRegressionClassifier.py, RandomForest.py and SVMclassifier.py scripts train and test KNN, Logistic Regression, Random Forest and SVM classifiers on the datasets. The features used are 13 MFCCs. Change the directory names as BUZZ1, BUZZ2 and BUZZ3 accordingly for the dataset on which you want to test the model preformance.
+
+The OneVSRest_using_SVM.py script train and test SVM classifier using One Vs Rest classifier startegy.
+
+The model_validate.py script loads the saved model and validates it on the validation data of respective dataset. 

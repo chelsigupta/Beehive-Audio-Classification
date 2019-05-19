@@ -1,0 +1,11 @@
+This folder contains 5 python scripts (extracting_librosa_features.py, extracting_pyaudio_features.py, pca_plots.py, pca_variance_test.py, pca_variance_validate.py) and 1 sub folder (saved_models).
+
+The saved_models folder contains all the trained models saved through python pickle library.
+
+The extracting_librosa_features.py and extracting_pyaudio_features.py are the python scripts to extract features using LibROSA and pyAudioAnalysis python libraries respectively. Change the directory names as train, test and validate for BUZZ1, BUZZ2 and BUZZ3 according to the category for which you want to extract the features.
+
+The pca_plots.py script plots all the 34 principal components against their explained variance.
+
+The pca_variance_test.py script extracts appropriate number of principal components for BUZZ2 dataset and trains and tests all our standard machine learning models using those components.
+
+The pca_variance_validate.py script loads all the saved models and validates them on validation data of BUZZ2. 
